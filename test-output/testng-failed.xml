@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [SDET University Test Suites]">
+  <test name="Smoke Test: Login Page(failed)">
+    <classes>
+      <class name="smoketests.ATagsTest">
+        <methods>
+          <include name="loginElementsPresentTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- smoketests.ATagsTest -->
+    </classes>
+  </test> <!-- Smoke Test: Login Page(failed) -->
+</suite> <!-- Failed suite [SDET University Test Suites] -->
