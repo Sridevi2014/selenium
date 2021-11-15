@@ -17,7 +17,7 @@ public class PageTitleJUnit {
 	{
 		System.out.println("Running the test");
 			
-		WebDriver driver =                        utilities.DriverFactory.open("chrome");
+		WebDriver driver = utilities.DriverFactory.open("chrome");
 		driver.get(webURL);		
 		String actualTitle = driver.getTitle();
 		String expectedTitle = "SDET Trainging | Account Managemen";

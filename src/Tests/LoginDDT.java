@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-
+//data driven testing with testNG@dataProvider(.xls data)
 public class LoginDDT {
 	WebDriver driver;
 

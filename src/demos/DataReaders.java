@@ -9,7 +9,8 @@ public class DataReaders {
 		//readCSV();
 		readXLS();
 	}
-
+    
+	//.CSV Reader class
 	public static void readCSV() {
 		String filename = "C:\\Sridevi\\Udemyclasses\\selenium\\UserAccounts.CSV";
 		List<String[]> records = utilities.CSV.get(filename);
@@ -24,6 +25,7 @@ public class DataReaders {
 
 	}
 	
+	//.xls reader class
 	public static void readXLS() {
 		String filename = "C:\\Sridevi\\Udemyclasses\\selenium\\UserLogin.xls";
 				String[][] data = utilities.Excel.get(filename);

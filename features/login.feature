@@ -1,5 +1,5 @@
 #Each feature contains one feature
-#FEature files use Gherkin language - business language
+#Feature files use Gherkin language - business language
 Feature: Test the login functionality on sdet university
 
 #A feature may have given different specific scenarios
@@ -13,6 +13,7 @@ Scenario Outline: the user should be able to login
 Given user is on the login page
 When user enters email <usename>
 And user enters  password <password>
+And user clicks  login button
 Then user gets confirmation
 
 Examples:

@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-
+//Data driven testing wit JUnit/ .CSV data
 @RunWith(value = Parameterized.class)
 public class NewAccountDDT {
 	String name, email, phone, gender, password, country;
@@ -87,7 +87,7 @@ public class NewAccountDDT {
 		submitButton = driver.findElement(By.id("MainContent_btnSubmit"));
 	}
 
-	// This annotated method is designed to pass parameters into the class via
+	// This annotation method is designed to pass parameters into the class via
 	// constructor
 	@Parameters
 	public static List<String[]> getData() {
@@ -95,7 +95,7 @@ public class NewAccountDDT {
 		return utilities.CSV.get("C:\\Sridevi\\Udemyclasses\\selenium\\UserAccounts.CSV");
 	}
 
-	// Constructor that passes parameters to the test method
+	// Constructor that passes parameters to the test method from CSV file
 	public NewAccountDDT(String name, String email, String phone, String gender, String password, String country,
 			String weeklyEmail, String monthlyEmail, String occasionalEmail) {
 		this.name = name;
